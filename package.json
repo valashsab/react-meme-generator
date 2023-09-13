@@ -1,6 +1,7 @@
 {
   "name": "react-meme-generator",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "dependencies": {
     "@upleveled/react-scripts": "5.0.11",

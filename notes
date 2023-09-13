@@ -1,0 +1,55 @@
+Create a web app with React that allows for users to generate and download memes using the https://memegen.link/ website.
+
+1.  [] access memes from URL
+    index.js file:
+    --> same or different way between node and react?
+    --> would it even work to work with node and react? 
+          - node: pnpm init
+          - react: pnpm start
+
+- get function
+  [] generate img URL
+- cheerio: generate links
+  [] download memes
+- donwload: library or function or code?
+
+Connection between index.js and App.js:
+a) index.js
+b) create variables that can be embedded in component.js and finally in App.js
+create a template / a component with the following dynamic components:
+
+- component 1: generated and downloaded meme =
+- component 2: top field
+- component 3: bottom field
+  c) preview
+
+2.  [ ] Enter text for the top and bottom of the meme
+
+- input fields?
+  [ ] The top text box needs to have a label element associated with it containing the text `Top text`
+- upper field with label and with speific text
+  [ ] The bottom text box needs to have a label element associated with it with the text `Bottom text`
+- lower field with label and specific text
+  [ ] Both text boxes should be empty when the page first loads
+- different values --> useState - initial value = empty - new value = entered value
+  [ ] Preview the generated meme
+
+3.  [ ] The image element needs to have an html attribute set as follows: `data-test-id="meme-image"` - [ ] This image element should show a working image when the page first loads
+
+- [ ] Change the meme template (the background image)
+  - [ ] The meme template selector element needs to have a label element associated with it containing the text `Meme template`
+  - [ ] If the user follows the steps below, the `doge` meme template needs to be selected:
+    1. Click on the label of the meme template selector
+    2. Clear any existing value (eg. with a text box)
+    3. Type the text `doge`
+    4. Hit enter
+- [ ] Download the meme by clicking on a button
+  - [ ] The button element needs to contain the text `Download`
+
+## Acceptance Criteria
+
+- [ ] Preflight runs through without errors in your project
+  - [ ] Link in your GitHub repo's About section: Netlify deployed website
+- [ ] Project has been [imported into CodeSandbox](https://learn.upleveled.io/courses/bootcamp-pern/modules/cheatsheet-tasks/#codesandbox) and a comment has been added below with the sandbox URL
+- [ ] [Drone bot](https://learn.upleveled.io/courses/bootcamp-pern/modules/cheatsheet-tasks/#upleveled-drone) has been tagged and responded with a passing message
+- [ ] Correct GitHub commit message format (see [Writing Commit Messages](https://learn.upleveled.io/courses/bootcamp-pern/modules/cheatsheet-git-github/#writing-commit-messages))
