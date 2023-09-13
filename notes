@@ -1,11 +1,13 @@
 Create a web app with React that allows for users to generate and download memes using the https://memegen.link/ website.
 
+reevaluate instrucations
+
+- create a form - hit return or button - but consider to prevent the default behaviour
+
 1.  [] access memes from URL
     index.js file:
     --> same or different way between node and react?
-    --> would it even work to work with node and react? 
-          - node: pnpm init
-          - react: pnpm start
+    --> would it even work to work with node and react? - node: pnpm init - react: pnpm start
 
 - get function
   [] generate img URL

@@ -1,6 +1,4 @@
-// import fs from 'node:fs';
-import axios from 'axios';
-import { load } from 'cheerio';
+import React, { useEffect, useState } from 'react';
 
 export default function App() {
   return <div></div>;
