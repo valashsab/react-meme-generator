@@ -10,6 +10,9 @@ function DownloadButton() {
         marginLeft: '10px',
         marginBottom: '10px',
         textTransform: 'uppercase',
+        border: '1px solid',
+        borderRadius: '25px',
+        padding: '10px',
       }}
       type="button"
     >
@@ -19,9 +22,5 @@ function DownloadButton() {
 }
 
 export default function App() {
-  return (
-    <>
-      <DownloadButton />
-    </>
-  );
+  return <DownloadButton />;
 }

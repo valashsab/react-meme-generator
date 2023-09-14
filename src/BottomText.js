@@ -8,7 +8,8 @@ function BottomText() {
       style={{
         fontFamily: 'Monospace',
         fontStretch: 'ultra-expanded',
-        fontSize: '1rem',
+        fontSize: '1.25rem',
+        fontWeight: 'bold',
         color: '#b4aaae',
         marginLeft: '10px',
         marginBottom: '10px',
@@ -23,8 +24,11 @@ function BottomText() {
         style={{
           border: '1px solid',
           borderRadius: '25px',
+          padding: '10px',
+          fontFamily: 'Monospace',
+          fontStretch: 'ultra-expanded',
+          fontSize: '1rem',
         }}
-        type="text"
         id="bottomtext"
         name="bottomtext"
         value={bottomText}
@@ -35,9 +39,5 @@ function BottomText() {
 }
 
 export default function App() {
-  return (
-    <>
-      <BottomText />
-    </>
-  );
+  return <BottomText />;
 }

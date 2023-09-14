@@ -6,7 +6,7 @@ function Header() {
           fontFamily: 'Monospace',
           fontStretch: 'ultra-expanded',
           fontSize: '2rem',
-          color: '#444444',
+          color: '#6A7142',
           marginLeft: '10px',
           marginBottom: '10px',
           textTransform: 'uppercase',
@@ -19,9 +19,5 @@ function Header() {
 }
 
 export default function App() {
-  return (
-    <>
-      <Header />
-    </>
-  );
+  return <Header />;
 }
