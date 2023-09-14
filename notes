@@ -1,43 +1,20 @@
 Create a web app with React that allows for users to generate and download memes using the https://memegen.link/ website.
 
-reevaluate instrucations
+It should allow the user to:
 
-- create a form - hit return or button - but consider to prevent the default behaviour
+- [ ] Enter text for the top and bottom of the meme
+      2x input field
 
-1.  [] access memes from URL
-    index.js file:
-    --> same or different way between node and react?
-    --> would it even work to work with node and react? - node: pnpm init - react: pnpm start
+  - [ ] The top text box needs to have a label element associated with it containing the text `Top text`
+  - [ ] The bottom text box needs to have a label element associated with it with the text `Bottom text`
+  - [ ] Both text boxes should be empty when the page first loads
+        meaning different states --> useState with initial and current value, updater function
 
-- get function
-  [] generate img URL
-- cheerio: generate links
-  [] download memes
-- donwload: library or function or code?
+  ***
 
-Connection between index.js and App.js:
-a) index.js
-b) create variables that can be embedded in component.js and finally in App.js
-create a template / a component with the following dynamic components:
-
-- component 1: generated and downloaded meme =
-- component 2: top field
-- component 3: bottom field
-  c) preview
-
-2.  [ ] Enter text for the top and bottom of the meme
-
-- input fields?
-  [ ] The top text box needs to have a label element associated with it containing the text `Top text`
-- upper field with label and with speific text
-  [ ] The bottom text box needs to have a label element associated with it with the text `Bottom text`
-- lower field with label and specific text
-  [ ] Both text boxes should be empty when the page first loads
-- different values --> useState - initial value = empty - new value = entered value
-  [ ] Preview the generated meme
-
-3.  [ ] The image element needs to have an html attribute set as follows: `data-test-id="meme-image"` - [ ] This image element should show a working image when the page first loads
-
+- [ ] Preview the generated meme
+  - [ ] The image element needs to have an html attribute set as follows: `data-test-id="meme-image"`
+    - [ ] This image element should show a working image when the page first loads
 - [ ] Change the meme template (the background image)
   - [ ] The meme template selector element needs to have a label element associated with it containing the text `Meme template`
   - [ ] If the user follows the steps below, the `doge` meme template needs to be selected:
@@ -47,6 +24,15 @@ create a template / a component with the following dynamic components:
     4. Hit enter
 - [ ] Download the meme by clicking on a button
   - [ ] The button element needs to contain the text `Download`
+
+## Stretch goals:
+
+- [ ] Reduce the amount of times a meme image is generated (don't generate it every time a user presses a key). Instead, generate a new image when the user clicks a button
+  - [ ] The button element needs to have an html attribute set as follows: `data-test-id="generate-meme"`
+- [ ] Use a `#`, `?` and `/` in your meme text
+- [ ] Save a history of generated meme top text, bottom text, and meme photo type. This history should reappear on refresh of the application.
+- [ ] Make your application work offline (without a network connection) with the [PWA capabilities built in to `create-react-app`](https://create-react-app.dev/docs/making-a-progressive-web-app/). Any meme images that were generated while online in the application should be available to be generated again offline as well.
+- [ ] Create a favicon that identifies your app: (see [Generating and Adding Favicons](https://learn.upleveled.io/courses/bootcamp-pern/modules/cheatsheet-design-ux/#generating-and-adding-favicons))
 
 ## Acceptance Criteria
 
