@@ -1,5 +1,7 @@
 import BottomText from './BottomText.js';
 import DownloadButton from './DownloadButton.js';
+import GenerateButton from './GenerateButton';
+import GenerateMeme from './GenerateMeme.js';
 import Header from './Header.js';
 import MemeTemplate from './MemeTemplate.js';
 import TopText from './TopText.js';
@@ -17,6 +19,9 @@ export default function App() {
       <br />
       <MemeTemplate />
       <br />
+      <GenerateMeme />
+      <br />
+      <GenerateButton />
       <DownloadButton />
       <br />
       <WebsiteRender />
