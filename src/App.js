@@ -1,11 +1,9 @@
-import BottomText from './BottomText.js';
-import DownloadButton from './DownloadButton.js';
-import GenerateButton from './GenerateButton';
-import GenerateMeme from './GenerateMeme.js';
-import Header from './Header.js';
-import MemeTemplate from './MemeTemplate.js';
-import TopText from './TopText.js';
-import WebsiteRender from './WebsiteRender.js';
+import BottomText from './Components/BottomText.js';
+import DownloadButton from './Components/DownloadButton.js';
+import GenerateButton from './Components/GenerateButton.js';
+import Header from './Components/Header.js';
+import MemeTemplate from './Components/MemeTemplate.js';
+import TopText from './Components/TopText.js';
 
 export default function App() {
   return (
@@ -19,23 +17,9 @@ export default function App() {
       <br />
       <MemeTemplate />
       <br />
-      <GenerateMeme />
-      <br />
       <GenerateButton />
       <DownloadButton />
       <br />
-      <WebsiteRender />
     </>
   );
 }
-
-/*  <input
-          type="imgage"
-          src="https://api.memegen.link/images/buzz/memes/memes_everywhere.gif?token=wxgjeu3jll4dt9q6fihy&width=800&frames=50"
-          alt="Submit"
-        >
-          Image
-        </input>
-      </form>
-      <br />
- */
