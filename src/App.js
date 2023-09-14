@@ -3,6 +3,7 @@ import DownloadButton from './Components/DownloadButton.js';
 import GenerateButton from './Components/GenerateButton.js';
 import Header from './Components/Header.js';
 import MemeTemplate from './Components/MemeTemplate.js';
+import MemeTemplates from './Components/RenderMemes.js';
 import TopText from './Components/TopText.js';
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
       <GenerateButton />
       <DownloadButton />
       <br />
+      <MemeTemplates />
     </>
   );
 }
