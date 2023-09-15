@@ -1,8 +1,5 @@
-import { useState } from 'react';
-
-function MemeTemplate() {
-  const [memeTemplate, setMemeTemplate] = useState('');
-
+export default
+function MemeTemplate(props) {
   return (
     <form
       style={{
@@ -31,13 +28,9 @@ function MemeTemplate() {
         }}
         id="memetemplate"
         name="memetemplate"
-        value={memeTemplate}
-        onChange={(event) => setMemeTemplate(event.currentTarget.value)}
+        value={props.memeTemplate}
+        onChange={(event) => props.setMemeTemplate(event.currentTarget.value)}
       />
     </form>
   );
-}
-
-export default function App() {
-  return <MemeTemplate />;
 }

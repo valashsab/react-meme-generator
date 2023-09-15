@@ -1,8 +1,4 @@
-import { useState } from 'react';
-
-function TopText() {
-  const [topText, setTopText] = useState('');
-
+export default function TopText(props) {
   return (
     <form
       style={{
@@ -31,13 +27,9 @@ function TopText() {
         }}
         id="toptext"
         name="toptext"
-        value={topText}
-        onChange={(event) => setTopText(event.currentTarget.value)}
+        value={props.topText}
+        onChange={(event) => props.setTopText(event.currentTarget.value)}
       />
     </form>
   );
-}
-
-export default function App() {
-  return <TopText />;
 }

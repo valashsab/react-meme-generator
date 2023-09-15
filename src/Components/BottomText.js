@@ -1,8 +1,4 @@
-import { useState } from 'react';
-
-function BottomText() {
-  const [bottomText, setBottomText] = useState('');
-
+export default function BottomText(props) {
   return (
     <form
       style={{
@@ -31,13 +27,9 @@ function BottomText() {
         }}
         id="bottomtext"
         name="bottomtext"
-        value={bottomText}
-        onChange={(event) => setBottomText(event.currentTarget.value)}
+        value={props.bottomText}
+        onChange={(event) => props.setBottomText(event.currentTarget.value)}
       />
     </form>
   );
-}
-
-export default function App() {
-  return <BottomText />;
 }
