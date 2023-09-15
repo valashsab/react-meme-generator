@@ -1,5 +1,4 @@
-export default
-function MemeTemplate(props) {
+export default function MemeTemplate(props) {
   return (
     <form
       style={{

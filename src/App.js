@@ -28,10 +28,10 @@ export default function App() {
       <GenerateButton />
       <DownloadButton />
       <br />
+
       <img
-        src={`https://api.memegen.link/images/${memeTemplate}/${topText}/${bottomText}.png?token=wxgjeu3jll4dt9q6fihy&width=800&frames=50`}
-        alt="buzz"
-        width="400px"
+        src={`https://api.memegen.link/images/both/${topText}/${bottomText}.png?height=450&width=800&token=6alj86spiq9iyevbknm3`}
+        alt="sassy little girl"
       />
     </>
   );
