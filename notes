@@ -18,6 +18,21 @@ It should allow the user to:
   [] 2.
 
 - [ ] Preview the generated meme
+      img changes value
+      initial value: e.g. both
+      --> const htmLinks = www. ....
+      current value depending on the typed element
+      --> array of links in reference to typed
+      if(input === doge) {
+      return setMemeTemplate()
+      }
+
+  if (event.key === "Enter") {
+  // Cancel the default action, if needed
+  event.preventDefault();
+  // Trigger the button element with a click
+  document.getElementById("myBtn").click();
+  }
 
   - [ ] The image element needs to have an html attribute set as follows: `data-test-id="meme-image"`
 
